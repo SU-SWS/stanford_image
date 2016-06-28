@@ -44,6 +44,40 @@ function stanford_image_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_contained_styles|bean|stanford_postcard|stanford_large_card';
+  $field_group->group_name = 'group_contained_styles';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_large_card';
+  $field_group->parent_name = 'group_large_card_styles';
+  $field_group->data = array(
+    'label' => 'Contained Styles',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_s_postcard_body',
+      1 => 'title_wrapper',
+      2 => 'group_more_link_style',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Contained Styles',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'contained',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_contained_styles|bean|stanford_postcard|stanford_large_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_image_styles|field_collection_item|field_s_image_info|stanford_icon_scaled';
   $field_group->group_name = 'group_image_styles';
   $field_group->entity_type = 'field_collection_item';
@@ -104,6 +138,71 @@ function stanford_image_field_group_info() {
     ),
   );
   $export['group_image_styles|field_collection_item|field_s_image_info|stanford_sm_scaled'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_large_card_styles|bean|stanford_postcard|stanford_large_card';
+  $field_group->group_name = 'group_large_card_styles';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_large_card';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Large Card Styles',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_s_image_info',
+      1 => 'group_contained_styles',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Large Card Styles',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_large_card_styles|bean|stanford_postcard|stanford_large_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_more_link_style|bean|stanford_postcard|stanford_large_card';
+  $field_group->group_name = 'group_more_link_style';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'stanford_postcard';
+  $field_group->mode = 'stanford_large_card';
+  $field_group->parent_name = 'group_contained_styles';
+  $field_group->data = array(
+    'label' => 'More Link Styles',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_s_postcard_link',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'More Link Styles',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'more-link',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_more_link_style|bean|stanford_postcard|stanford_large_card'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
