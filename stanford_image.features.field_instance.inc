@@ -885,7 +885,7 @@ function stanford_image_field_default_field_instances() {
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '1200x1200',
+      'max_resolution' => '3200x3200',
       'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
