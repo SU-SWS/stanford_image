@@ -1,6 +1,10 @@
 Stanford Image x.x-x.x xxxx-xx-xx
 --------------------------------------
 
+7.x-3.5+10-dev          2016-01-20
+---------------------------------
+- Changed max_resolution to 3200x3200 for image field collection
+
 7.x-3.5+6-dev          2016-05-30
 ---------------------------------
 - Added new view modes:
