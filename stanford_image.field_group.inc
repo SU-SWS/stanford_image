@@ -460,7 +460,7 @@ function stanford_image_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Caption Style',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'field_s_image_caption',
     ),
