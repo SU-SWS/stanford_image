@@ -142,7 +142,7 @@ function stanford_image_views_default_views() {
   $handler->display->display_options['relationships']['field_s_image_info_node']['label'] = 'Content using Image';
   /* Field: Bulk operations: Field collection item */
   $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'field_collection_item';
+  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'views_entity_field_collection_item';
   $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;

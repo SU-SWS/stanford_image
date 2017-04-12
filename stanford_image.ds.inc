@@ -165,6 +165,24 @@ function stanford_image_ds_view_modes_info() {
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'stanford_fw_banner_tall_caption';
+  $ds_view_mode->label = 'Banner full width tall caption';
+  $ds_view_mode->entities = array(
+    'field_collection_item' => 'field_collection_item',
+  );
+  $export['stanford_fw_banner_tall_caption'] = $ds_view_mode;
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'stanford_header_150_width_left';
+  $ds_view_mode->label = 'Header 150 Width Left';
+  $ds_view_mode->entities = array(
+    'bean' => 'bean',
+  );
+  $export['stanford_header_150_width_left'] = $ds_view_mode;
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'stanford_icon_profile';
   $ds_view_mode->label = 'Icon Profile';
   $ds_view_mode->entities = array(
@@ -189,15 +207,6 @@ function stanford_image_ds_view_modes_info() {
     'field_collection_item' => 'field_collection_item',
   );
   $export['stanford_icon_square'] = $ds_view_mode;
-
-  $ds_view_mode = new stdClass();
-  $ds_view_mode->api_version = 1;
-  $ds_view_mode->view_mode = 'stanford_header_150_width_left';
-  $ds_view_mode->label = 'Header 150 Width Left';
-  $ds_view_mode->entities = array(
-    'bean' => 'bean',
-  );
-  $export['stanford_header_150_width_left'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
