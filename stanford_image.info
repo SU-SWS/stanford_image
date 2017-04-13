@@ -24,6 +24,7 @@ features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
+features[ds_layout_settings][] = field_collection_item|field_s_image_info|stanford_fw_banner_tall_caption
 features[ds_view_modes][] = stanford_12_col_banner
 features[ds_view_modes][] = stanford_3_col_header
 features[ds_view_modes][] = stanford_4_col_header
