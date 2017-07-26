@@ -196,6 +196,18 @@ function stanford_image_strongarm() {
       'stanford_banner_fw_short_credits' => array(
         'custom_settings' => TRUE,
       ),
+      'full_width_banner_tall_caption' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_fw_banner_tall_caption' => array(
+        'custom_settings' => TRUE,
+      ),
+      'header_370x170' => array(
+        'custom_settings' => TRUE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
