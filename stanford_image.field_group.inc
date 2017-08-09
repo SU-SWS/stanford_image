@@ -876,7 +876,7 @@ function stanford_image_field_group_info() {
         'id' => '',
         'classes' => 'group-s-image-border-style field-group-div',
         'description' => '',
-        'show_label' => '1',
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
